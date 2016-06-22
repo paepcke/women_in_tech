@@ -1,4 +1,6 @@
-import multiprocessing
+# NOTE: assumes presence of pandas, scipy, matplotlib,
+#       such as in a conda environment.
+
 from setuptools import setup, find_packages
 
 test_requirements = ['sentinels>=0.0.6', 'nose>=1.0', 'python-dateutil>=2.2']
@@ -12,9 +14,11 @@ setup(
     setup_requires   = ['nose>=1.1.2'],
     tests_require    = test_requirements,
     install_requires = ['ijson>=1.0', 
-			'pandas>=0.18.0',
-			'scipy>= 0.17.0',
-			'matplotlib>= 1.5.1',
+			#'pandas>=0.18.0',
+			'xlrd>=0.9.4',
+			#'scipy>= 0.17.0',
+			#'matplotlib>= 1.5.1',
+			'survey_utils>=0.0.5',
 			] + test_requirements,
 
     # Unit tests; they are initiated via 'python setup.py test'
