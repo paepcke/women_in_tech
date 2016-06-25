@@ -19,6 +19,8 @@ setup(
 			#'scipy>= 0.17.0',
 			#'matplotlib>= 1.5.1',
 			'survey_utils>=0.0.5',
+			#'Jinja2>=2.8',
+			#'seaborn>=0.7.1',       # Heatmaps
 			] + test_requirements,
 
     # Unit tests; they are initiated via 'python setup.py test'
